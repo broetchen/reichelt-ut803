@@ -29,7 +29,14 @@ int read_span(char* serchars)
 {
 	return;
 }
+int get_dezstelle(char* serchars)
+{
+	char dezstelle[2];
+	dezstelle[0]=serchars[0];
+	dezstelle[1]='\0';
 
+	return atoi(dezstelle);
+}
 void get_unit(char* serchars, int span, char* unit)
 {
 	switch (serchars[5])
